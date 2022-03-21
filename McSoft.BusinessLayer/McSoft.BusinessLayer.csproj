@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\McSoft.Core\McSoft.Core.csproj" />
     <ProjectReference Include="..\McSoft.DataAccsessLayer\McSoft.DataAccsessLayer.csproj" />
     <ProjectReference Include="..\McSoft.Entities\McSoft.Entities.csproj" />
