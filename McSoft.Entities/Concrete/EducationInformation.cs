@@ -15,7 +15,7 @@ namespace McSoft.Entities.Concrete
         public byte EducationType { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public bool Graduate { get; set; }
-        public double Degree { get; set; }
+        public bool Garduate{ get; set; }
+        public decimal Degree { get; set; }
     }
 }

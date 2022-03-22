@@ -1,4 +1,6 @@
-﻿using System;
+﻿using McSoft.Core.Entities;
+using McSoft.Core.Utilities.Result;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,6 @@ namespace McSoft.Core.Services
 {
    public  interface IService
     {
+        
     }
 }

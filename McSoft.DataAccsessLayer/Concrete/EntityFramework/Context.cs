@@ -12,8 +12,9 @@ namespace McSoft.DataAccsessLayer.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = (localdb)\mssqllocaldb;DataBase=MYDATAS;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server = (localdb)\MSSQLLOCALDB;DataBase=MYDATAS");
         }
         public DbSet<EducationInformation> EducationInformations { get; set; }
+        public DbSet<PersonalInformation> PersonalInformations { get; set; }
     }
 }

@@ -17,6 +17,8 @@ namespace McSoft.BusinessLayer.DependencyResolvers.AotoFac
         {
             builder.RegisterType<EducationInfoManager>().As<IEducationInfoService>();
             builder.RegisterType<EfEducationInfoDal>().As<IEducationInfoDal>();
+            builder.RegisterType<PersonalInfoManager>().As<IPersonalInfoService>();
+            builder.RegisterType<EfPersonalInfoDal>().As<IPersonalInfoDal>();
         }
     }
 }

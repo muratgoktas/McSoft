@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.Core", "McSoft.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.WebApi", "McSoft.WebApi\McSoft.WebApi.csproj", "{83071533-EEF1-4D9E-8868-AEACA641F127}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{2C223F46-59C4-4AA0-A884-9D8A64557760}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{83071533-EEF1-4D9E-8868-AEACA641F127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83071533-EEF1-4D9E-8868-AEACA641F127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83071533-EEF1-4D9E-8868-AEACA641F127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
