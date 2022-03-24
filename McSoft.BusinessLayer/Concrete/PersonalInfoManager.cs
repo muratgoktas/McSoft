@@ -14,22 +14,24 @@ namespace McSoft.BusinessLayer.Concrete
     public class PersonalInfoManager : IPersonalInfoService
     {
         private IPersonalInfoDal _personalInfoDal;
+        private MessagesDictionaryBase _dictionaryBase;
 
-        public PersonalInfoManager(IPersonalInfoDal personalInfoDal)
+        public PersonalInfoManager(IPersonalInfoDal personalInfoDal, MessagesDictionaryBase dictionaryBase)
         {
             _personalInfoDal = personalInfoDal;
+            _dictionaryBase = dictionaryBase;
         }
 
         public IResult Add(PersonalInformation personalInfo)
         {
             _personalInfoDal.Add(personalInfo);
-            return new SuccessResult(Messages.addedMessage);
+            return new SuccessResult(_dictionaryBase.addedMessage);
         }
 
         public IResult Delete(PersonalInformation personalInfo)
         {
             _personalInfoDal.Delete(personalInfo);
-            return new SuccessResult(Messages.deletedMessage);
+            return new SuccessResult(_dictionaryBase.deletedMessage);
         }
 
         public IDataResult<PersonalInformation> GetbyId(int Id)
@@ -50,7 +52,7 @@ namespace McSoft.BusinessLayer.Concrete
         public IResult Update(PersonalInformation personalInfo)
         {
             _personalInfoDal.Update(personalInfo);
-            return new SuccessResult(Messages.updatedMessage);
+            return new SuccessResult(_dictionaryBase.updatedMessage);
         }
     }
 }

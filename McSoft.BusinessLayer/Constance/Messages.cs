@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Constance
 {
-    public static class Messages 
+    public class Messages :MessagesDictionaryBase
     {
-        public static string addedMessage = "New Record Added!";
-        public static string deletedMessage = "This Record Deleted!";
-        public static string updatedMessage = "This Record Updated!";
+      
+        public override string addedMessage => "New Record Added!";
 
+        public override string deletedMessage => "This Record Deleted!";
+
+        public override string updatedMessage => "This Record Updated!";
     }
 }

@@ -1,4 +1,5 @@
-﻿using McSoft.Entities.Concrete;
+﻿using McSoft.Core.Entities.Concrete;
+using McSoft.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,8 @@ namespace McSoft.DataAccsessLayer.Concrete.EntityFramework
         }
         public DbSet<EducationInformation> EducationInformations { get; set; }
         public DbSet<PersonalInformation> PersonalInformations { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }

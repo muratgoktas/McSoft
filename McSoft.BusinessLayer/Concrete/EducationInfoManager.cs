@@ -15,10 +15,12 @@ namespace McSoft.BusinessLayer.Concrete
     public class EducationInfoManager : IEducationInfoService
     {
         private IEducationInfoDal _educationDal;
+        private MessagesDictionaryBase _dictionaryBase;
 
-        public EducationInfoManager(IEducationInfoDal educationDal)
+        public EducationInfoManager(IEducationInfoDal educationDal,MessagesDictionaryBase dictionaryBase)
         {
             _educationDal = educationDal;
+            _dictionaryBase = dictionaryBase;
         }
 
         public IDataResult<EducationInformation> GetbyId(int Id)
@@ -37,20 +39,20 @@ namespace McSoft.BusinessLayer.Concrete
         public IResult  Add(EducationInformation educationInfo)
         {
            _educationDal.Add(educationInfo);
-          return new   SuccessResult(Messages.addedMessage);
+          return new   SuccessResult(_dictionaryBase.addedMessage);
             
         }
 
         public IResult Delete(EducationInformation educationInfo)
         {
             _educationDal.Delete(educationInfo);
-            return new SuccessResult(Messages.deletedMessage);
+            return new SuccessResult(_dictionaryBase.deletedMessage);
         }
 
         public IResult Update(EducationInformation educationInfo)
         {
             _educationDal.Update(educationInfo);
-            return new SuccessResult(Messages.updatedMessage);
+            return new SuccessResult(_dictionaryBase.updatedMessage);
 
         }
 

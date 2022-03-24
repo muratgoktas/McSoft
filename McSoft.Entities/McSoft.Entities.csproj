@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
+    <ProjectReference Include="..\McSoft.Core\McSoft.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\McSoft.Core\McSoft.Core.csproj" />
+    <Folder Include="Abstract\" />
   </ItemGroup>
 
 </Project>
