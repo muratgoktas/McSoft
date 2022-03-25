@@ -11,7 +11,10 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.DependencyResolvers.AotoFac
 {
-   public class AutofacBusinessModule:Module
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
+    public class AutofacBusinessModule:Module
     {
         protected override void Load(ContainerBuilder builder)
         {

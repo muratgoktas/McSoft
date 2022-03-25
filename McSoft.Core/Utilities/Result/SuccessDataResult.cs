@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Utilities.Result
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class SuccessDataResult<T>:DataResult<T>
     {
         public SuccessDataResult(T data,string message):base(data,true,message)

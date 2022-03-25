@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.DataAccess
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     // where T : class (referans tip olsun) , IEntity (türünde olsun),new() newlensin yani IEntitiy gibi Interface olmasın.
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {

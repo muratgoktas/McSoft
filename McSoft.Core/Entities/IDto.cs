@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Entities.Abstract
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IDto
     {
     }

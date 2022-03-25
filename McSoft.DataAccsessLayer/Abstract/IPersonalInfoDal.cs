@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.DataAccsessLayer.Abstract
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IPersonalInfoDal: IEntityRepository<PersonalInformation>
     {
     }

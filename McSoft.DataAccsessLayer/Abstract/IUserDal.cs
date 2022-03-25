@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.DataAccsessLayer.Abstract
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IUserDal:IEntityRepository<User>
     {
         List<OperationClaim> GetCliams(User user);

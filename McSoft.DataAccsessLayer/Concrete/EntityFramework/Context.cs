@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.DataAccsessLayer.Concrete.EntityFramework
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class Context:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

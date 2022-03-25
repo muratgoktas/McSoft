@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Utilities.Result
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class ErrorResult:Result
     {
         public ErrorResult(string message) : base( false,message) 

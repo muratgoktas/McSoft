@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Utilities.Result
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IResult
     {
         // işlemin başarı durumu. Readonly (sadece get; var).

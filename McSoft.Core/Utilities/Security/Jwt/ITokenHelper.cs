@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Utilities.Security.Jwt
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface ITokenHelper
     {
         AccessToken CreateToken(User user,List<OperationClaim> operationClaims);

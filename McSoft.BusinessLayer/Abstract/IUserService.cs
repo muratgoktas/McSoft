@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Abstract
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IUserService
     {
         List<OperationClaim> GetAll(User user);

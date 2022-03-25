@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Concrete
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class PersonalInfoManager : IPersonalInfoService
     {
         private IPersonalInfoDal _personalInfoDal;

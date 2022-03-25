@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.DataAccsessLayer.Concrete.EntityFramework
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class EfEducationInfoDal : EfEntityRepositoryBase<EducationInformation, Context> , IEducationInfoDal
     {
 

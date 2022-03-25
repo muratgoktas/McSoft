@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Concrete
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class UserManager : IUserService
     {
         private IUserDal _userDal;

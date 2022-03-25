@@ -10,6 +10,9 @@ namespace McSoft.Core.Extensions
 {
     public static class ClaimExtensions
      {    
+        /*
+         @}--'--{  McSoft Murat GOKTAS
+         */
         public static void AddEmail(this ICollection<Claim> claims,string email)
         {
             claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));

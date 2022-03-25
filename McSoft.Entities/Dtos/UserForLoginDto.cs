@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Entities.Dtos
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class UserForLoginDto:IDto
     {
         public string Email { get; set; }

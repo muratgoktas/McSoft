@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Abstract
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public interface IPersonalInfoService:IService
     {
         IDataResult<PersonalInformation> GetbyId(int Id);

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Constance
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class MessageTurkish : MessagesDictionaryBase
     {
         public override string addedMessage => "Yeni Kayıt Eklendi!";

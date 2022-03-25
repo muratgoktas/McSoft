@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Concrete
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class EducationInfoManager : IEducationInfoService
     {
         private IEducationInfoDal _educationDal;

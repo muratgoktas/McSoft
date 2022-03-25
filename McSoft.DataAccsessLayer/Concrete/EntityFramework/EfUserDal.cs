@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.DataAccsessLayer.Concrete.EntityFramework
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class EfUserDal : EfEntityRepositoryBase<User, Context>, IUserDal
     {
         public List<OperationClaim> GetCliams(User user)

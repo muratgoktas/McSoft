@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Services
 {
-   public  interface IService
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
+    public interface IService
     {
         
     }

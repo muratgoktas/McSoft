@@ -9,6 +9,9 @@ namespace McSoft.Core.Utilities.Security.Encyption
 {
     public class SigningCredentialsHelper
     {
+        /*
+         @}--'--{  McSoft Murat GOKTAS
+         */
         public static SigningCredentials CreateSigningCredentials(SecurityKey securityKey)
         {
             return new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);

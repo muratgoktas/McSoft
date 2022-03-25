@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Utilities.Security.Jwt
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class TokenOptions
     {
         public string Audience{ get; set; }

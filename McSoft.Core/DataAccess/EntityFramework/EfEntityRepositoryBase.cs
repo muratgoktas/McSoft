@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.DataAccess.EntityFramework
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
          where TEntity : class, IEntity, new()
          where TContext : DbContext, new()

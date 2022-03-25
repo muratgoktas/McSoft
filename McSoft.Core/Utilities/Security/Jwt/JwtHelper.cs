@@ -13,6 +13,9 @@ using McSoft.Core.Extensions;
 
 namespace McSoft.Core.Utilities.Security.Jwt
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class JwtHelper : ITokenHelper
     {
         public IConfiguration Configuration { get; }

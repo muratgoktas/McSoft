@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace WebApi.Controllers
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     [Route("api/[controller]")]
     [ApiController]
     public class PersonalInformationsController : ControllerBase

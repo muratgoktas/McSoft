@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.Core.Entities.Concrete
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class User:IEntity
     {
         public int Id { get; set; }

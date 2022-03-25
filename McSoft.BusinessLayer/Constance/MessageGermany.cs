@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Constance
 {
+    /*
+         @}--'--{  McSoft Murat GOKTAS
+    */
     public class MessageGermany : MessagesDictionaryBase
     {
         public override string addedMessage => "Neuer Rekord hinzugefügt!";
