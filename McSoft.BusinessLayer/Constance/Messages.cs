@@ -17,5 +17,17 @@ namespace McSoft.BusinessLayer.Constance
         public override string deletedMessage => "This Record Deleted!";
 
         public override string updatedMessage => "This Record Updated!";
+
+        public override string userNotFound => "User Not Founded!";
+
+        public override string passwordError => "Password Error!";
+
+        public override string successfulLogin => "Successful Login!";
+
+        public override string userAlreadyExists => "User Already Exists!";
+
+        public override string userRegistered => "User Registered With Success!";
+
+        public override string accessTokenCreated => "Access Token Created!";
     }
 }

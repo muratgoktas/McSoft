@@ -13,7 +13,7 @@ namespace McSoft.BusinessLayer.Abstract
     */
     public interface IUserService
     {
-        List<OperationClaim> GetAll(User user);
+        List<OperationClaim> GetClaims(User user);
         void Add(User user);
         User GetByMail(string email);
     }

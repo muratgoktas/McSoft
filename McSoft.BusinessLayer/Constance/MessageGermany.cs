@@ -16,5 +16,17 @@ namespace McSoft.BusinessLayer.Constance
         public override string deletedMessage => "Dieser Datensatz wurde gelöscht!";
 
         public override string updatedMessage => "Dieser Datensatz wurde aktualisiert!";
+
+        public override string userNotFound => "Benutzer nicht gefunden!";
+
+        public override string passwordError => "Passwort-Fehler!";
+
+        public override string successfulLogin => "Anmeldung erfolgreich!";
+
+        public override string userAlreadyExists => "Benutzer existiert bereits!";
+
+        public override string userRegistered => "Benutzer erfolgreich registriert!";
+
+        public override string accessTokenCreated => "Zugriffstoken erstellt!";
     }
 }

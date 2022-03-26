@@ -26,14 +26,19 @@ namespace McSoft.BusinessLayer.Concrete
             _userDal.Add(user);
         }
 
-        public List<OperationClaim> GetAll(User user)
+       /* public List<OperationClaim> GetAll(User user)
         {
             return _userDal.GetCliams(user);
         }
-
+       */
         public User GetByMail(string email)
         {
             return _userDal.Get(u => u.Email == email);
+        }
+
+        public List<OperationClaim> GetClaims(User user) 
+        {
+            return _userDal.GetCliams(user);
         }
     }
 }

@@ -16,5 +16,17 @@ namespace McSoft.BusinessLayer.Constance
         public override string deletedMessage => "Bu Kayıt Silindi!";
 
         public override string updatedMessage => "Bu Kayıt Güncellendi!";
+
+        public override string userNotFound => "Kullanıcı bulunamadı!";
+
+        public override string passwordError => "Şifre Hatası!";
+
+        public override string successfulLogin => "Başarılı Giriş!";
+
+        public override string userAlreadyExists => "Kullanıcı Zaten Var!";
+
+        public override string userRegistered => "Kullanıcı Başarıyla Kaydedildi!";
+
+        public override string accessTokenCreated => "AccessToken Oluşturuldu!";
     }
 }
