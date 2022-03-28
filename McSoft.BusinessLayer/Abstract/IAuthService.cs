@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Abstract
 {
-    public interface IAutoService
+    public interface IAuthService
     {
         IDataResult<User> Register(UserFroRegisterDto userFroRegisterDto, string password);
         IDataResult<User> Login(UserForLoginDto userForLoginDto);

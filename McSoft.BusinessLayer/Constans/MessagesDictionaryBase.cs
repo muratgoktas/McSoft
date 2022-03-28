@@ -1,6 +1,6 @@
 ﻿using McSoft.Core.Entities.Concrete;
 
-namespace McSoft.BusinessLayer.Constance
+namespace McSoft.BusinessLayer.Constans
 {
     public  abstract class MessagesDictionaryBase
     {

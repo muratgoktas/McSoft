@@ -1,5 +1,5 @@
 ﻿using McSoft.BusinessLayer.Abstract;
-using McSoft.BusinessLayer.Constance;
+using McSoft.BusinessLayer.Constans;
 using McSoft.Core.Services;
 using McSoft.Core.Utilities.Result;
 using McSoft.DataAccsessLayer.Abstract;
@@ -18,12 +18,13 @@ namespace McSoft.BusinessLayer.Concrete
     public class EducationInfoManager : IEducationInfoService
     {
         private IEducationInfoDal _educationDal;
-        private MessagesDictionaryBase _dictionaryBase;
+        private MessageGermany _dictionaryBase;
 
-        public EducationInfoManager(IEducationInfoDal educationDal,MessagesDictionaryBase dictionaryBase)
+        public EducationInfoManager(IEducationInfoDal educationDal, MessageGermany dictionaryBase)
         {
             _educationDal = educationDal;
             _dictionaryBase = dictionaryBase;
+           
         }
 
         public IDataResult<EducationInformation> GetbyId(int Id)

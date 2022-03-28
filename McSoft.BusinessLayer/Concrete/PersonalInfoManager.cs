@@ -1,5 +1,5 @@
 ﻿using McSoft.BusinessLayer.Abstract;
-using McSoft.BusinessLayer.Constance;
+using McSoft.BusinessLayer.Constans;
 using McSoft.Core.Utilities.Result;
 using McSoft.DataAccsessLayer.Abstract;
 using McSoft.Entities.Concrete;

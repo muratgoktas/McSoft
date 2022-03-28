@@ -1,5 +1,5 @@
 ﻿using McSoft.BusinessLayer.Abstract;
-using McSoft.BusinessLayer.Constance;
+using McSoft.BusinessLayer.Constans;
 using McSoft.Core.Entities.Concrete;
 using McSoft.Core.Utilities.Result;
 using McSoft.Core.Utilities.Security.Hashing;
@@ -13,12 +13,12 @@ using System.Threading.Tasks;
 
 namespace McSoft.BusinessLayer.Concrete
 {
-    public class AutoManager : IAutoService
+    public class AuthManager : IAuthService
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
         private MessagesDictionaryBase _messagesDictionary;
-        public AutoManager(IUserService userService, ITokenHelper tokenHelper)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
