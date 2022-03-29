@@ -17,18 +17,20 @@ namespace McSoft.BusinessLayer.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
-        private MessagesDictionaryBase _messagesDictionary;
+      
         public AuthManager(IUserService userService, ITokenHelper tokenHelper)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
+           
+           
         }
 
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
             var claims=_userService.GetClaims(user);
             var accessToken= _tokenHelper.CreateToken(user,claims );
-            return new SuccessDataResult<AccessToken>(accessToken, _messagesDictionary.accessTokenCreated);
+            return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
            
         }
 
@@ -37,17 +39,17 @@ namespace McSoft.BusinessLayer.Concrete
             var userToCheck = _userService.GetByMail(userForLoginDto.Email);
             if (userToCheck==null)
             {
-                return new ErrorDataResult<User>(_messagesDictionary.userNotFound);
+                return new ErrorDataResult<User>(Messages.UserNotFound);
             }
             if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password,userToCheck.PasswordHash,userToCheck.PasswordSalt))
             {
-                return new ErrorDataResult<User>(_messagesDictionary.passwordError);
+                return new ErrorDataResult<User>(Messages.PasswordError);
             }
-            return new SuccessDataResult<User>(userToCheck, _messagesDictionary.successfulLogin);
+            return new SuccessDataResult<User>(userToCheck, Messages.SuccessfulLogin );
             
         }
 
-        public IDataResult<User> Register(UserFroRegisterDto userFroRegisterDto, string password)
+        public IDataResult<User> Register(UserForRegisterDto userFroRegisterDto, string password)
         {
             // biz out ile passwordHash, passwordSalt boş gönderiyoruz orada oluşan değeri alıyor. Çünkü referans tip oluyor.
             // Ayrıntılı bilgi istiyorsan ref ve out bak. out ref farkı out sonradan değer alır. ref baştan değer alır.
@@ -65,16 +67,16 @@ namespace McSoft.BusinessLayer.Concrete
 
             };
             _userService.Add(user);
-            return new SuccessDataResult<User>(user, _messagesDictionary.userRegistered);
+            return new SuccessDataResult<User>(user,Messages.UserRegistered );
         }
 
         public IResult UserExists(string email)
         {
             if (_userService.GetByMail(email)!=null)
             {
-                return new ErrorResult(_messagesDictionary.userAlreadyExists);
+                return new ErrorResult(Messages.UserAlreadyExists );
             }
-            return new SuccessResult(_messagesDictionary.successfulLogin);
+            return new SuccessResult(Messages.SuccessfulLogin);
         }
     }
 }

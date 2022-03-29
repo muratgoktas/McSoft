@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using McSoft.BusinessLayer.Abstract;
 using McSoft.BusinessLayer.Concrete;
+using McSoft.BusinessLayer.Constans;
 using McSoft.Core.Utilities.Security.Jwt;
 using McSoft.DataAccsessLayer.Abstract;
 using McSoft.DataAccsessLayer.Concrete.EntityFramework;
@@ -29,7 +30,10 @@ namespace McSoft.BusinessLayer.DependencyResolvers.AotoFac
             builder.RegisterType<EfUserDal>().As<IUserDal>();
 
             builder.RegisterType<AuthManager>().As<IAuthService>();
-            builder.RegisterType<JwtHelper>().As<ITokenHelper>();
+            builder.RegisterType<JwtHelper>().As<ITokenHelper>(); 
+
+            builder.RegisterType<Messages>().As<IMessages>();
+
 
         }
     }

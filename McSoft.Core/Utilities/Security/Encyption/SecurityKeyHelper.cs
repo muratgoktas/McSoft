@@ -14,6 +14,8 @@ namespace McSoft.Core.Utilities.Security.Encyption
          */
         public static SecurityKey CreateSecurityKey(string securityKey)
         {
+            //if (String.IsNullOrEmpty(securityKey))
+            //    throw new ArgumentNullException(nameof(securityKey));
             return new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey));
         }
     }

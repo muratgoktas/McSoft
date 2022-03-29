@@ -2,6 +2,7 @@
 using McSoft.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace WebApi.Controllers
             _personalInfoService = personalInfoService;
         }
         [HttpGet("getall")]
+        [Authorize()]
         public IActionResult GetList()
         {
             var result = _personalInfoService.GetList();

@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.Entities", "McSoft.Entities\McSoft.Entities.csproj", "{3DE28F44-C3A6-4D01-B1F8-611B53829398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McSoft.Entities", "McSoft.Entities\McSoft.Entities.csproj", "{3DE28F44-C3A6-4D01-B1F8-611B53829398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.DataAccsessLayer", "McSoft.DataAccsessLayer\McSoft.DataAccsessLayer.csproj", "{D864E5E6-05E4-4CC9-BDEB-79319B1D3001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McSoft.DataAccsessLayer", "McSoft.DataAccsessLayer\McSoft.DataAccsessLayer.csproj", "{D864E5E6-05E4-4CC9-BDEB-79319B1D3001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.BusinessLayer", "McSoft.BusinessLayer\McSoft.BusinessLayer.csproj", "{C032CE48-CE2A-44F7-B792-487A039BE34D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McSoft.BusinessLayer", "McSoft.BusinessLayer\McSoft.BusinessLayer.csproj", "{C032CE48-CE2A-44F7-B792-487A039BE34D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.Core", "McSoft.Core\McSoft.Core.csproj", "{DEF251CD-4D8B-4CA4-80CD-5FD98C92347A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McSoft.Core", "McSoft.Core\McSoft.Core.csproj", "{DEF251CD-4D8B-4CA4-80CD-5FD98C92347A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McSoft.WebApi", "McSoft.WebApi\McSoft.WebApi.csproj", "{83071533-EEF1-4D9E-8868-AEACA641F127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "McSoft.WebApi", "McSoft.WebApi\McSoft.WebApi.csproj", "{83071533-EEF1-4D9E-8868-AEACA641F127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{2C223F46-59C4-4AA0-A884-9D8A64557760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{2C223F46-59C4-4AA0-A884-9D8A64557760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormRecapDemo", "WinFormRecapDemo\WinFormRecapDemo.csproj", "{F799AC59-3073-42FE-BB1D-BD13920BC58F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C223F46-59C4-4AA0-A884-9D8A64557760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F799AC59-3073-42FE-BB1D-BD13920BC58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F799AC59-3073-42FE-BB1D-BD13920BC58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F799AC59-3073-42FE-BB1D-BD13920BC58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F799AC59-3073-42FE-BB1D-BD13920BC58F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

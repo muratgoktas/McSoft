@@ -10,7 +10,7 @@ namespace McSoft.Entities.Dtos
     /*
          @}--'--{  McSoft Murat GOKTAS
     */
-    public class UserFroRegisterDto:IDto
+    public class UserForRegisterDto:IDto
     {
         public string FirstName { get; set; }
         public string LastName  { get; set; }

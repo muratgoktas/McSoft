@@ -3,6 +3,7 @@ using McSoft.BusinessLayer.Abstract;
 using McSoft.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace WebApi.Controllers
             _educationInfoService = educationInfoService;
         }
         [HttpGet("getall")]
+        [Authorize(Roles ="Education.List")]
         public IActionResult GetList()
         {
             var result = _educationInfoService.GetList();

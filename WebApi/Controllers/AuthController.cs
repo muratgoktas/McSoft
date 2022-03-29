@@ -36,7 +36,7 @@ namespace WebApi.Controllers
             return BadRequest(result.Message);
         }
         [HttpPost("register")]
-        public ActionResult Register(UserFroRegisterDto  userFroRegisterDto)
+        public ActionResult Register(UserForRegisterDto  userFroRegisterDto)
         {
             //Kullanıcı vr mı Emailden kontrol ediyoruz.
             var userExists = _authService.UserExists(userFroRegisterDto.Email);

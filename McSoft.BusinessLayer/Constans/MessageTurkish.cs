@@ -9,24 +9,24 @@ namespace McSoft.BusinessLayer.Constans
     /*
          @}--'--{  McSoft Murat GOKTAS
     */
-    public class MessageTurkish : MessagesDictionaryBase
+    public class MessageTurkish : IMessages
     {
-        public override string addedMessage => "Yeni Kayıt Eklendi!";
+        public static string AddedMessage => "Yeni Kayıt Eklendi!";
 
-        public override string deletedMessage => "Bu Kayıt Silindi!";
+        public static string DeletedMessage => "Bu Kayıt Silindi!";
 
-        public override string updatedMessage => "Bu Kayıt Güncellendi!";
+        public static string UpdatedMessage => "Bu Kayıt Güncellendi!";
 
-        public override string userNotFound => "Kullanıcı bulunamadı!";
+        public static string UserNotFound => "Kullanıcı bulunamadı!";
 
-        public override string passwordError => "Şifre Hatası!";
+        public static string PasswordError => "Şifre Hatası!";
 
-        public override string successfulLogin => "Başarılı Giriş!";
+        public static string SuccessfulLogin => "Başarılı Giriş!";
 
-        public override string userAlreadyExists => "Kullanıcı Zaten Var!";
+        public static string UserAlreadyExists => "Kullanıcı Zaten Var!";
 
-        public override string userRegistered => "Kullanıcı Başarıyla Kaydedildi!";
+        public static string UserRegistered => "Kullanıcı Başarıyla Kaydedildi!";
 
-        public override string accessTokenCreated => "AccessToken Oluşturuldu!";
+        public static string AccessTokenCreated => "AccessToken Oluşturuldu!";
     }
 }

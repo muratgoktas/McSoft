@@ -47,7 +47,7 @@ namespace WebApi
                     ValidIssuer=tokenOptions.Issuer,
                     ValidAudience=tokenOptions.Audience,
                     ValidateIssuerSigningKey=true,
-                    IssuerSigningKey=SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecuriyKey)
+                    IssuerSigningKey=SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                 };
             });
             services.AddSwaggerGen(c =>
@@ -70,10 +70,10 @@ namespace WebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseAuthorization();
-
+            // Eve giriþ anahtarý
             app.UseAuthentication();
+            // Odalara giriþ yetkileri
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

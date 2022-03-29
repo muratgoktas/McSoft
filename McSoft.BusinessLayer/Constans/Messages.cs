@@ -9,25 +9,24 @@ namespace McSoft.BusinessLayer.Constans
     /*
          @}--'--{  McSoft Murat GOKTAS
     */
-    public class Messages :MessagesDictionaryBase
+    public class Messages : IMessages
     {
-      
-        public override string addedMessage => "New Record Added!";
 
-        public override string deletedMessage => "This Record Deleted!";
+        public static string AddedMessage => "New Record Added!";
+        public static string DeletedMessage => "This Record Deleted!";
 
-        public override string updatedMessage => "This Record Updated!";
+        public static string UpdatedMessage => "This Record Updated!";
 
-        public override string userNotFound => "User Not Founded!";
+        public static string UserNotFound => "User Not Founded!";
 
-        public override string passwordError => "Password Error!";
+        public static string PasswordError => "Password Error!";
 
-        public override string successfulLogin => "Successful Login!";
+        public static string SuccessfulLogin => "Successful Login!";
 
-        public override string userAlreadyExists => "User Already Exists!";
+        public static string UserAlreadyExists => "User Already Exists!";
 
-        public override string userRegistered => "User Registered With Success!";
+        public static string UserRegistered => "User Registered With Success!";
 
-        public override string accessTokenCreated => "Access Token Created!";
+        public static string AccessTokenCreated => "Access Token Created!";
     }
 }

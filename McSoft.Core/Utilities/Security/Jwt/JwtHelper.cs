@@ -30,7 +30,7 @@ namespace McSoft.Core.Utilities.Security.Jwt
 
         public AccessToken CreateToken(User user, List<OperationClaim> operationClaims)
         {
-            var securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecuriyKey);
+            var securityKey = SecurityKeyHelper.CreateSecurityKey(_tokenOptions.SecurityKey);
             var signingCredintials = SigningCredentialsHelper.CreateSigningCredentials(securityKey);
             var jwt = CreateJwtSecurityToken(_tokenOptions, user, signingCredintials, operationClaims);
             var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
@@ -38,7 +38,7 @@ namespace McSoft.Core.Utilities.Security.Jwt
             return new AccessToken
             {
                 Expiration = _accessTokenExpiration,
-                Token = token,
+                Token = token
 
             };
         }
