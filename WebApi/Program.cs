@@ -1,6 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using McSoft.BusinessLayer.DependencyResolvers.AotoFac;
+using McSoft.BusinessLayer.DependencyResolvers.AutoFac;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

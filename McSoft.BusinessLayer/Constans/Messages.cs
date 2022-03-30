@@ -12,21 +12,21 @@ namespace McSoft.BusinessLayer.Constans
     public class Messages : IMessages
     {
 
-        public static string AddedMessage => "New Record Added!";
-        public static string DeletedMessage => "This Record Deleted!";
+        public string AddedMessage => "New Record Added!";
+        public string DeletedMessage => "This Record Deleted!";
 
-        public static string UpdatedMessage => "This Record Updated!";
+        public string UpdatedMessage => "This Record Updated!";
 
-        public static string UserNotFound => "User Not Founded!";
+        public string UserNotFound => "User Not Founded!";
 
-        public static string PasswordError => "Password Error!";
+        public string PasswordError => "Password Error!";
 
-        public static string SuccessfulLogin => "Successful Login!";
+        public string SuccessfulLogin => "Successful Login!";
 
-        public static string UserAlreadyExists => "User Already Exists!";
+        public string UserAlreadyExists => "User Already Exists!";
 
-        public static string UserRegistered => "User Registered With Success!";
+        public string UserRegistered => "User Registered With Success!";
 
-        public static string AccessTokenCreated => "Access Token Created!";
+        public string AccessTokenCreated => "Access Token Created!";
     }
 }

@@ -8,14 +8,14 @@ namespace McSoft.BusinessLayer.Constans
 {
     public interface IMessages
     {
-        static string AddedMessage { get; }
-        static string DeletedMessage { get; }
-        static string UpdatedMessage { get; }
-        static string UserNotFound { get; }
-        static string PasswordError { get; }
-        static string SuccessfulLogin { get; }
-        static string UserAlreadyExists { get; }
-        static string UserRegistered { get; }
-        static string AccessTokenCreated { get; }
+         string AddedMessage { get; }
+         string DeletedMessage { get; }
+         string UpdatedMessage { get; }
+         string UserNotFound { get; }
+         string PasswordError { get; }
+         string SuccessfulLogin { get; }
+         string UserAlreadyExists { get; }
+         string UserRegistered { get; }
+         string AccessTokenCreated { get; }
     }
 }

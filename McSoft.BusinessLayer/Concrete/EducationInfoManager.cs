@@ -18,10 +18,12 @@ namespace McSoft.BusinessLayer.Concrete
     public class EducationInfoManager : IEducationInfoService
     {
         private IEducationInfoDal _educationDal;
+        private readonly IMessages _messages;
 
-        public EducationInfoManager(IEducationInfoDal educationDal)
+        public EducationInfoManager(IEducationInfoDal educationDal,IMessages messages)
         {
             _educationDal = educationDal;
+            _messages = messages;
          
         }
 
@@ -41,20 +43,20 @@ namespace McSoft.BusinessLayer.Concrete
         public IResult  Add(EducationInformation educationInfo)
         {
            _educationDal.Add(educationInfo);
-          return new   SuccessResult(Messages.AddedMessage);
+          return new   SuccessResult(_messages.AddedMessage);
             
         }
 
         public IResult Delete(EducationInformation educationInfo)
         {
             _educationDal.Delete(educationInfo);
-            return new SuccessResult(Messages.DeletedMessage);
+            return new SuccessResult(_messages.DeletedMessage);
         }
 
         public IResult Update(EducationInformation educationInfo)
         {
             _educationDal.Update(educationInfo);
-            return new SuccessResult(Messages.UpdatedMessage);
+            return new SuccessResult(_messages.UpdatedMessage);
 
         }
 

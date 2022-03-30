@@ -17,23 +17,26 @@ namespace McSoft.BusinessLayer.Concrete
     public class PersonalInfoManager : IPersonalInfoService
     {
         private IPersonalInfoDal _personalInfoDal;
-
-        public PersonalInfoManager(IPersonalInfoDal personalInfoDal)
+        private readonly IMessages _messages; //= new MessageTurkish();
+      
+        public PersonalInfoManager(IPersonalInfoDal personalInfoDal,IMessages messages)
         {
             _personalInfoDal = personalInfoDal;
-
+            _messages = messages;
+            
         }
 
         public IResult Add(PersonalInformation personalInfo)
         { 
             _personalInfoDal.Add(personalInfo);
-            return new SuccessResult(Messages.AddedMessage);
+            
+            return new SuccessResult(_messages.AddedMessage);
         }
 
         public IResult Delete(PersonalInformation personalInfo)
         {
             _personalInfoDal.Delete(personalInfo);
-            return new SuccessResult(Messages.DeletedMessage);
+            return new SuccessResult(_messages.DeletedMessage);
         }
 
         public IDataResult<PersonalInformation> GetbyId(int Id)
@@ -54,7 +57,7 @@ namespace McSoft.BusinessLayer.Concrete
         public IResult Update(PersonalInformation personalInfo)
         {
             _personalInfoDal.Update(personalInfo);
-            return new SuccessResult(Messages.UpdatedMessage);
+            return new SuccessResult(_messages.UpdatedMessage);
         }
     }
 }

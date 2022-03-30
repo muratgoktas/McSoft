@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McSoft.BusinessLayer.DependencyResolvers.AotoFac
+namespace McSoft.BusinessLayer.DependencyResolvers.AutoFac
 {
     /*
          @}--'--{  McSoft Murat GOKTAS
@@ -32,7 +32,7 @@ namespace McSoft.BusinessLayer.DependencyResolvers.AotoFac
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>(); 
 
-            builder.RegisterType<Messages>().As<IMessages>();
+            builder.RegisterType<MessageGermany>().As<IMessages>();
 
 
         }

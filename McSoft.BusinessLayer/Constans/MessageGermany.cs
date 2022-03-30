@@ -11,22 +11,22 @@ namespace McSoft.BusinessLayer.Constans
     */
     public class MessageGermany : IMessages
     {
-        public static string AddedMessage => "Neuer Rekord hinzugefügt!";
+        public  string AddedMessage => "Neuer Rekord hinzugefügt!";
 
-        public static string DeletedMessage => "Dieser Datensatz wurde gelöscht!";
+        public  string DeletedMessage => "Dieser Datensatz wurde gelöscht!";
 
-        public static string UpdatedMessage => "Dieser Datensatz wurde aktualisiert!";
+        public  string UpdatedMessage => "Dieser Datensatz wurde aktualisiert!";
 
-        public static string UserNotFound => "Benutzer nicht gefunden!";
+        public  string UserNotFound => "Benutzer nicht gefunden!";
 
-        public static string PasswordError => "Passwort-Fehler!";
+        public  string PasswordError => "Passwort-Fehler!";
 
-        public static string SuccessfulLogin => "Anmeldung erfolgreich!";
+        public  string SuccessfulLogin => "Anmeldung erfolgreich!";
 
-        public static string UserAlreadyExists => "Benutzer existiert bereits!";
+        public  string UserAlreadyExists => "Benutzer existiert bereits!";
 
-        public static string UserRegistered => "Benutzer erfolgreich registriert!";
+        public  string UserRegistered => "Benutzer erfolgreich registriert!";
 
-        public static string AccessTokenCreated => "Zugriffstoken erstellt!";
+        public  string AccessTokenCreated => "Zugriffstoken erstellt!";
     }
 }

@@ -17,6 +17,7 @@ namespace McSoft.BusinessLayer.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
+        private IMessages _messages;
       
         public AuthManager(IUserService userService, ITokenHelper tokenHelper)
         {
@@ -30,7 +31,7 @@ namespace McSoft.BusinessLayer.Concrete
         {
             var claims=_userService.GetClaims(user);
             var accessToken= _tokenHelper.CreateToken(user,claims );
-            return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
+            return new SuccessDataResult<AccessToken>(accessToken, _messages.AccessTokenCreated);
            
         }
 
@@ -39,13 +40,13 @@ namespace McSoft.BusinessLayer.Concrete
             var userToCheck = _userService.GetByMail(userForLoginDto.Email);
             if (userToCheck==null)
             {
-                return new ErrorDataResult<User>(Messages.UserNotFound);
+                return new ErrorDataResult<User>(_messages.UserNotFound);
             }
             if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password,userToCheck.PasswordHash,userToCheck.PasswordSalt))
             {
-                return new ErrorDataResult<User>(Messages.PasswordError);
+                return new ErrorDataResult<User>(_messages.PasswordError);
             }
-            return new SuccessDataResult<User>(userToCheck, Messages.SuccessfulLogin );
+            return new SuccessDataResult<User>(userToCheck, _messages.SuccessfulLogin );
             
         }
 
@@ -67,16 +68,16 @@ namespace McSoft.BusinessLayer.Concrete
 
             };
             _userService.Add(user);
-            return new SuccessDataResult<User>(user,Messages.UserRegistered );
+            return new SuccessDataResult<User>(user,_messages.UserRegistered );
         }
 
         public IResult UserExists(string email)
         {
             if (_userService.GetByMail(email)!=null)
             {
-                return new ErrorResult(Messages.UserAlreadyExists );
+                return new ErrorResult(_messages.UserAlreadyExists );
             }
-            return new SuccessResult(Messages.SuccessfulLogin);
+            return new SuccessResult(_messages.SuccessfulLogin);
         }
     }
 }

@@ -11,22 +11,22 @@ namespace McSoft.BusinessLayer.Constans
     */
     public class MessageTurkish : IMessages
     {
-        public static string AddedMessage => "Yeni Kayıt Eklendi!";
+        public  string AddedMessage => "Yeni Kayıt Eklendi!";
 
-        public static string DeletedMessage => "Bu Kayıt Silindi!";
+        public  string DeletedMessage => "Bu Kayıt Silindi!";
 
-        public static string UpdatedMessage => "Bu Kayıt Güncellendi!";
+        public  string UpdatedMessage => "Bu Kayıt Güncellendi!";
 
-        public static string UserNotFound => "Kullanıcı bulunamadı!";
+        public  string UserNotFound => "Kullanıcı bulunamadı!";
 
-        public static string PasswordError => "Şifre Hatası!";
+        public  string PasswordError => "Şifre Hatası!";
 
-        public static string SuccessfulLogin => "Başarılı Giriş!";
+        public  string SuccessfulLogin => "Başarılı Giriş!";
 
-        public static string UserAlreadyExists => "Kullanıcı Zaten Var!";
+        public  string UserAlreadyExists => "Kullanıcı Zaten Var!";
 
-        public static string UserRegistered => "Kullanıcı Başarıyla Kaydedildi!";
+        public  string UserRegistered => "Kullanıcı Başarıyla Kaydedildi!";
 
-        public static string AccessTokenCreated => "AccessToken Oluşturuldu!";
+        public  string AccessTokenCreated => "AccessToken Oluşturuldu!";
     }
 }
